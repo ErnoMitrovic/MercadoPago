@@ -1,0 +1,27 @@
+* {
+    color: #d31e1f;
+    font-family: Merriweather, PT Sans;
+}
+body{
+    min-height: 100%;
+    background-color: white;
+}
+
+a{
+    color: #5463d4;
+    text-decoration: unset;
+}
+
+.form-root{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.center{
+    margin: auto;
+    width: 50%;
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+}
