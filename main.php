@@ -6,10 +6,10 @@
     // Para el valor del donativo
     session_start();
 
-    $_SESSION["name"] = $_POST["nombre"];
-    $_SESSION["donacion"] = $_POST["donacion"];
+    $_SESSION["name"] = $_POST["name"];
+    $_SESSION["donation"] = $_POST["donation"];
 
-    $donativo = $_SESSION["donacion"];
+    $donativo = $_SESSION["donation"];
     // Crea un objeto de preferencia
     $preference = new MercadoPago\Preference();
 
@@ -29,10 +29,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main page</title>
+    <link rel="stylesheet" href="./styles/main.css">
     <script src="https://sdk.mercadopago.com/js/v2"></script>
 </head>
 <body> 
-    <h1>Mercado pago</h1>
+    <h1>Gracias</h1>
 
     <div class="check-btn"></div>
 

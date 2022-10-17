@@ -88,29 +88,8 @@ header p {
 .input-item {
     background: #fff;
     color: #333;
-    padding: 14.5px 0px 15px 9px;
+    padding: 14px 0px 15px 9px;
     border-radius: 5px 0px 0px 5px;
-}
-
-
-
-/* Show/hide password Font Icon */
-#eye {
-    background: #fff;
-    color: #333;
-
-    margin: 5.9px 0 0 0;
-    margin-left: -20px;
-    padding: 15px 9px 19px 0px;
-    border-radius: 0px 5px 5px 0px;
-
-    float: right;
-    position: relative;
-    right: 1%;
-    top: -.2%;
-    z-index: 5;
-
-    cursor: pointer;
 }
 
 /* inputs form  */
@@ -134,8 +113,9 @@ input[class="form-input"] {
 }
 
 input[id="txt-input"] {
-    width: 250px;
+    min-width: 250px;
 }
+
 
 /* focus  */
 input:focus {
@@ -169,25 +149,6 @@ button {
     margin: 7% auto;
     letter-spacing: 0.05em;
 }
-
-/* Submits */
-.submits {
-    width: 48%;
-    display: inline-block;
-    float: left;
-    margin-left: 2%;
-}
-
-/*       Forgot Password button FAF3DD  */
-.frgt-pass {
-    background: transparent;
-}
-
-/*     Sign Up button  */
-.sign-up {
-    background: #B8F2E6;
-}
-
 
 /* buttons hover */
 button:hover {

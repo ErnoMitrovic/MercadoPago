@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/form.css">
+    <title>Form</title>
+</head>
+
+<body>
+    <div class="overlay">
+        <!-- LOGN IN FORM by Omar Dsoky -->
+        <form action="./main.php" method="post">
+            <!--   con = Container  for items in the form-->
+            <div class="con">
+                <!--     Start  header Content  -->
+                <header class="head-form">
+                    <h2>Donacion</h2>
+                    <!--     A welcome message or an explanation of the login form -->
+                    <p>Ingresa tus datos y detalles de la donacion</p>
+                </header>
+                <!--     End  header Content  -->
+                <br>
+                <div class="field-set">
+
+                    <!--   user name -->
+                    <span class="input-item">
+                        <i class="fa fa-user-circle"></i>
+                    </span>
+                    <!--   user name Input-->
+                    <input class="form-input" name="name" id="txt-input" type="text" placeholder="Nombre" 
+                    pattern ="([A-Z])\w+"required>
+                    <br>
+                    <!--   donation value -->
+                    <span class="input-item">
+                        <i class="fa fa-user-circle"></i>
+                    </span>
+                    <!--   donation Input-->
+                    <input class="form-input" name="donation" id="dxt-input" type="text" placeholder="Donacion" 
+                    pattern="([0-9]{1,3},([0-9]{3},)*[0-9]{3}|[0-9]+)(.[0-9][0-9])?" required>
+
+                    <br>
+                    <!--      button LogIn -->
+                    <button class="log-in"> Confirmar </button>
+                </div>
+
+                <!--   End Container  -->
+            </div>
+
+            <!-- End Form -->
+        </form>
+    </div>
+</body>
+
+</html>
