@@ -11,6 +11,10 @@
 
 /* End Global rules */
 
+html, body {
+    height: 100%;
+}
+
 /* Start body rules */
 body {
     background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
@@ -170,3 +174,4 @@ button:hover {
         transform: translateY(5px);
     }
 }
+
