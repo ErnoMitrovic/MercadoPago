@@ -19,6 +19,10 @@ $item->title = 'Donacion';
 $item->quantity = 1;
 $item->unit_price = $donativo;
 $preference->items = array($item);
+$preference->back_urls = array(
+    "success"=> "./formDonation.php",
+    "failure" => "./formDonation.php",
+);
 $preference->save();
 
 ?>
