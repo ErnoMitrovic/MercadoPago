@@ -8,47 +8,45 @@
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-}
-
-html {
-    display: table;
-    margin: auto;
-}
-
 /* Start body rules */
-.parent {
-    height: 200px;
-    background: #CCCCCC;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    }
-    .child {
-    background-color: #FFFF00;
-    width: 100px;
-    height: 100px;
-    }
 
-.check-btn{
+.check-btn {
     margin: 0 auto;
 }
 
 a {
     background-color: powderblue;
     transition: background-color 0.5s;
-  }
-  
-  a:hover {
-    background-color: gold;
-  }
+}
 
-  .center {
+a:hover {
+    background-color: gold;
+}
+
+.center {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     border: 5px solid #FFFF00;
     padding: 10px;
+}
+/* Two image containers */
+.column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+@media screen and (max-width: 500px) {
+    .column {
+      width: 100%;
     }
+  }
