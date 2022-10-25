@@ -6,6 +6,9 @@ MercadoPago\SDK::setAccessToken("TEST-5858676746087604-080521-cad403637c2434eba4
 // Para el valor del donativo
 session_start();
 
+$uri = $_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"];
+$uri = substr($uri, 0, strpos($uri, "main.php"))."formDonation.html";
+
 $_SESSION["name"] = $_POST["name"];
 $_SESSION["donation"] = $_POST["donation"];
 
@@ -20,8 +23,8 @@ $item->quantity = 1;
 $item->unit_price = $donativo;
 $preference->items = array($item);
 $preference->back_urls = array(
-    "success"=> "./formDonation.php",
-    "failure" => "./formDonation.php",
+    "success"=> $uri,
+    "failure" => $uri,
 );
 $preference->save();
 
